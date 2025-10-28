@@ -27,10 +27,10 @@
     <div class="container">
 
         <div class="alert alert-success mb-3" role="alert">
-            <p>obj:TAKANASHI_HOSHINOによる譜面の難易度表。次期難易度表フォーマット対応。試作段階のため、いろいろ不足しています。</p>
+            <p>obj:TAKANASHI_HOSHINO、またはその別名義の譜面の難易度表。次期難易度表フォーマット対応。</p>
             <p>難易度表の読み込みと表示に数秒かかります。</p>
             <hr>
-            <p class="mb-0">『通常』はsl相当、『臨戦』はst相当に対応。</p>
+            <p class="mb-0">『通常』はsl相当、『臨戦』はst相当に対応。レベルのアンダーバーは管理上の都合なので気にしないでください。</p>
         </div>
 
 
@@ -61,7 +61,7 @@
                 for (var i = 0; i < info.length; i++) {
                     if (x != info[i].level) {
                         if (obj_sep != null) {
-                            obj_sep.html("<td colspan='4'>" + "<b>" + mark + x + " (" + count +
+                            obj_sep.html("<td colspan='6'>" + "<b>" + mark + x + " (" + count +
                                 "譜面)</b></td>");
                         }
                         obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
